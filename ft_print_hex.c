@@ -36,7 +36,7 @@ static void	ft_putnbr_hex(unsigned int nbr, const char format)
 	{
 		if (nbr <= 9)
 			ft_putchar_fd((nbr + '0'), 1);
-		else// 10<=nbr<=15, lo trasforma nel numero ASCII della lettera minuscola corrispndente
+		else// 10<=nbr<=15, turns it in the ASCII number of the corresponding lowcase letter
 		{
 			if (format == 'x')
 				ft_putchar_fd((nbr - 10 + 'a'), 1);
