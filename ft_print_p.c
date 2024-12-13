@@ -26,7 +26,7 @@ static int	ft_putnbr_p(unsigned long nbr)
 	{
 		if (nbr <= 9)
 			l += ft_putchar_fd((nbr + '0'), 1);
-		else// 10<=nbr<=15, lo trasforma nel numero ASCII della lettera minuscola corrispndente
+		else// 10<=nbr<=15, turns it in the ASCII number of the corresponding lowcase letter
 			l += ft_putchar_fd((nbr - 10 + 'a'), 1);
 	}
 	return (l);
