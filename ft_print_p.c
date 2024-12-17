@@ -39,8 +39,7 @@ int	ft_print_p(intptr_t *p)
 	l = 0;
 	if (!p)
 		return (write(1, "(nil)", 5));
-	write(1, "0x", 2);
-	l += 2;
+	l += write(1, "0x", 2);
 	l += ft_putnbr_p((unsigned long)p);
 	return (l);
 }
